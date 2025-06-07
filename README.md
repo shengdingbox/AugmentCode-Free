@@ -10,7 +10,7 @@ AugmentCode无限免费续杯方案
 
 # AugmentCode-Free (English)
 
-**AugmentCode-Free** is a Python-based command-line toolkit designed to provide core functionalities for managing and cleaning up aspects of the Visual Studio Code local environment, drawing inspiration from the `augment-vip` project.
+**AugmentCode-Free** is a Python-based command-line toolkit designed to provide core functionalities for managing and cleaning up aspects of the Visual Studio Code local environment.
 
 The initial version, "AugmentCode Unlimited Free Refill Plan," was created by the user. This project aims to build upon that foundation with robust, modular, and open-source code.
 
@@ -138,7 +138,7 @@ This project is open source. (Consider adding a specific license like MIT Licens
 
 # AugmentCode-Free (中文)
 
-**AugmentCode-Free** 是一个基于 Python 的命令行工具包，旨在提供管理和清理 Visual Studio Code 本地环境的核心功能，其灵感来源于 `augment-vip` 项目。
+**AugmentCode-Free** 是一个基于 Python 的命令行工具包，旨在提供管理和清理 Visual Studio Code 本地环境的核心功能。
 
 最初的版本“AugmentCode无限免费续杯方案”由用户创建。本项目旨在以该版本为基础，构建健壮、模块化且开源的代码。
 
