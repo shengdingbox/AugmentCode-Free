@@ -39,7 +39,6 @@ Currently, AugmentCode-Free offers the following key features:
 *   Provide a free, open-source alternative for specific VS Code management tasks.
 *   Offer modular and understandable Python code.
 *   Ensure robust error handling and user-friendly command-line feedback.
-*   Maintain logical consistency with the functionalities of the original `augment-vip` project while using original code.
 
 ## Installation
 
@@ -167,7 +166,6 @@ This project is open source. (Consider adding a specific license like MIT Licens
 *   为特定的 VS Code 管理任务提供一个免费的开源替代方案。
 *   提供模块化且易于理解的 Python 代码。
 *   确保强大的错误处理和用户友好的命令行反馈。
-*   在使用原创代码的同时，保持与原始 `augment-vip` 项目功能上的逻辑一致性。
 
 ## 安装指南
 
