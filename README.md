@@ -49,7 +49,6 @@ The GUI provides an easy-to-use interface for all features.
     ```bash
     python main.py
     ```
-    *(As the author kindly noted: "以后直接启动main.py就行喵" - From now on, just run main.py!)*
 
 -   **If installed via pip (as `augment-tools-gui`):**
     ```bash
@@ -116,7 +115,6 @@ GUI 为所有功能提供了简单易用的操作界面。
     ```bash
     python main.py
     ```
-    *(正如作者温馨提示："以后直接启动main.py就行喵"！)*
 
 -   **如果通过 pip 安装 (作为 `augment-tools-gui`):**
     ```bash
