@@ -26,6 +26,7 @@ setup(
     entry_points={
         "console_scripts": [
             "augment-tools = augment_tools_core.cli:main_cli",
+            "augment-tools-gui = main:main",
         ],
     },
     classifiers=[
