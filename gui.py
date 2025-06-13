@@ -360,6 +360,10 @@ class AugmentToolsGUI:
                                              self.modify_ids_clicked, style="primary")
         self.modify_ids_btn.pack(fill='x', pady=(0, 12))
 
+        self.modify_ids_btn = CursorProButton(buttons_frame, "登录新账号",
+                                              self.login_aug_clicked, style="primary")
+        self.modify_ids_btn.pack(fill='x', pady=(0, 12))
+
         # Set default keyword (no UI input needed)
         self.keyword_var = tk.StringVar(value="augment")
 
@@ -767,7 +771,32 @@ class AugmentToolsGUI:
                 self.root.after(0, lambda: self.set_buttons_state('normal'))
         
         threading.Thread(target=modify_task, daemon=True).start()
-    
+
+    def login_aug_clicked(self):
+        """Handle login button click"""
+        import base64
+        import uuid
+        import hashlib
+        import webbrowser
+        from urllib.parse import urlencode
+        code_verifier = base64.urlsafe_b64encode(hashlib.sha256(uuid.uuid4().bytes).digest()).decode('utf-8').replace('=', '')
+        code_challenge = base64.urlsafe_b64encode(hashlib.sha256(code_verifier.encode()).digest()).decode('utf-8').replace('=', '')
+        state = str(uuid.uuid4())
+        # 构造授权 URL
+        params = {
+            "response_type": "code",
+            "code_challenge": code_challenge,
+            "code_challenge_method": "S256",
+            "client_id": "augment-vscode-extension",
+            "redirect_uri": "vscode://augment.vscode-augment/auth/result",
+            "state": state,
+            "scope": "email",
+            "prompt": "login"
+        }
+        auth_url = f"https://auth.augmentcode.com/authorize?{urlencode(params)}"
+        webbrowser.open(auth_url)
+
+
     def run_all_clicked(self):
         """Handle run all tools button click - 一键修改"""
         # Show special warning for this operation
